@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hugo Romero" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index"/>
+    <title>Wabi</title>
+    <link href='images/favicon.png' rel='shortcut icon' type='image/x-icon'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row buscador">
+                <div class="col-xs logo col-lg-4">
+                    <img src="images/logo_wabi.svg" width="52.44px" alt="Wabi"/>
+                </div>
+                <div class="col-xs col-lg-4">
+                    <div class="input-group mb-3 mt-3">
+                        <span class="input-group-text">
+                            <svg class="icon-inline icon-2x" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-xs col-lg-2 login">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn-es-en" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          ES
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                          <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                        </ul>
+                      </div>
+                    <img src="images/user.svg" width="19px" alt="user"/>
+                </div>
+                <div class="col-xs col-lg-2 cart">
+                    <img src="images/shopping_cart-24px.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-wabi">
+        <div class="container">
+          <a class="navbar-brand" href="#">Promociones</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ALCOHOL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BEVERAGES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GROCERIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BEAUTY AND HEALTHCARE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME CLEANING</a>
+              </li>
+              
+            </ul>
+            <ul class="navbar-nav two">
+                <!-- Login user -->
+              <li class="nav-item dropdown">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li class="user-li">
+                    <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="us" cx="12" cy="6" r="4.6" stroke="black" stroke-width="2.8"/>
+                        <path class="us" d="M2 26C2 22.6667 4.7 16 11.5 16C18.3 16 21 22.6667 21 26" stroke="black" stroke-width="2.8"/>
+                    </svg>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li>
+                      <img src="images/shopping_cart-24px.svg" alt="">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section id="banner">
+        <div class="container-fluid">
+            <img src="images/wabi.png" class="desktop" title="Bajate Wabi y recibí tu bebida" alt="Bajate Wabi y recibí tu bebida"/>
+            <img src="images/wabi_mb.png" class="mobile" title="Bajate Wabi y recibí tu bebida" alt="Bajate Wabi y recibí tu bebida"/>
+        </div>
+    </section>
+    <section id="productos">
+        <div class="container">
+            <h1>Productos en promoción</h1>
+            <div class="row">
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+                <div class="card col-xs col-lg">
+                    <span class="min">Minimo x 1U</span>
+                    <img src="images/coca.png" alt="coca-cola" title="coca-cola"/>
+                    <h2>NESTRLE GOLD CornFlakes 14 x 500g</h2>
+                    <h3>CORN FLAKES</h3>
+                    <h4>$9.30</h4>
+                    <div class="contador">
+                        <div class="cod"><h5>CX14U</h5></div>
+                        <div class="num">
+                            <button class="subtract">-</button>
+                            <input type="number" id="cantidad" value="1" min="1" />
+                            <button class="add">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-success">
+                        Agregar a <span class="material-icons md-18">shopping_cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
